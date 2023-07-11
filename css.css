@@ -44,8 +44,20 @@ body {
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
+}
+
+ul li {
+  margin: 10px;
+}
+
+ul li a {
+  font-size: 40px;
 }
 
 .box li {
