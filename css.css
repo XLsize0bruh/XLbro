@@ -7,7 +7,7 @@ body {
 }
 
 .box {
-  width: 100%;
+  width: 650px;
   height: 100vh;
   background: rgba(0, 0, 0, 0.4);
   padding: 40px;
