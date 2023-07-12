@@ -67,7 +67,7 @@ ul li a {
   color: #b9b9b9;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1080px) {
   body {
     margin: 0;
     padding: 50px;
