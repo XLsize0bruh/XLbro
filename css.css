@@ -69,6 +69,32 @@ ul li a {
 
 @media (max-width: 680px) {
   body {
-    overflow: auto;
+    margin: 0;
+    padding: 50px;
+    background-color: #c991ef;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .box-img {
+    max-width: 300px;
+  }
+
+  .box h1 {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+
+  .box h5 {
+    font-size: 24px;
+  }
+
+  ul li a {
+    font-size: 36px;
+  }
+
+  .box li a {
+    font-size: 100px;
   }
 }
