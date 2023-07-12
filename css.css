@@ -1,27 +1,28 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #FF7F50;
+  background-color: #FFA2D9;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
 
 .box-img {
   border-radius: 50%;
-  width: 300px; /* Increased the width to 300px */
-  height: 300px; /* Increased the height to 300px */
+  width: 100%;
+  height: auto;
+  max-width: 300px;
 }
 
 .box h1 {
-  font-size: 48px; /* Increased the font size to 48px */
+  font-size: 48px;
   letter-spacing: 4px;
   font-weight: 100;
   margin: 20px 0;
 }
 
 .box h5 {
-  font-size: 24px; /* Increased the font size to 24px */
+  font-size: 40px;
   letter-spacing: 3px;
   font-weight: 100;
   margin: 0;
@@ -45,7 +46,7 @@ ul li {
 }
 
 ul li a {
-  font-size: 48px; /* Decreased the font size to 48px */
+  font-size: 48px;
 }
 
 .box li {
@@ -57,7 +58,7 @@ ul li a {
 .box li a {
   color: white;
   text-decoration: none;
-  font-size: 100px;
+  font-size: 145px;
   transition: all ease-in-out 250ms;
 }
 
