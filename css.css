@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: #c991ef;
   background-size: cover;
-  max-height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -73,7 +73,7 @@ ul li a {
     padding: 50px;
     background-color: #c991ef;
     background-size: cover;
-    max-height: 100vh;
+    min-height: 100vh;
     text-align: center;
   }
 
