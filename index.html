@@ -11,11 +11,29 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      margin-top: 80px; }
+      margin-top: 80px;
+    }
 
     h1, p {
       margin: 0;
     }
+
+    .snowflake {
+      position: absolute;
+      color: #fff;
+      font-size: 25px;
+    }
+
+    @keyframes snowfall {
+  0% {
+    top: -5%;
+  }
+  100% {
+    top: 105%;
+  }
+  
+}
+
   </style>
   <title>bruh</title>
 </head>
@@ -25,17 +43,41 @@
       <img src="https://i1.sndcdn.com/artworks-hLi1wgEaxEkT5fdL-PiBmtQ-t500x500.jpg" alt="" class="box-img">
       <h1><b>XLsize_bruh</b></h1>
       <h5><b>HUMAN ig</b></h5>
-      <p><font size = 5>"Jack of all trades, but Master of none"</font></p>
-      
+      <p><font size="5">"Jack of all trades, but Master of none"</font></p>
     </div>
     <ul>
       <li><a href="https://github.com/XLsize0bruh"><i class="fab fa-github" aria-hidden="true"></i></a></li>
       <li><a href="https://youtube.com/@xlsize_bruh"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
       <li><a href="https://discord.gg/zFjjgvupT3%22%3E"><i class="fab fa-discord" aria-hidden="true"></i></a></li>
       <li><a href="https://open.spotify.com/user/31cktlmbczsl4pw4adgtcfub4ujm?si=4dMJoYgZQcGVbQt0FSYL4A"><i class="fab fa-spotify" aria-hidden="true"></i></a></li>
-      <p><font size = 5>--Web-Software Developer--</font></p>
+      <p><font size="5">--Web-Software Developer--</font></p>
     </ul>
-    
   </div>
+
+  <script>
+    function createSnowflake() {
+  const snowflake = document.createElement("span");
+  snowflake.innerHTML = "&#10052;";
+  snowflake.classList.add("snowflake");
+  
+  const size = Math.random() * 20 + 10;
+  snowflake.style.fontSize = size + "px";
+
+  const startX = Math.random() * window.innerWidth;
+  snowflake.style.left = startX + "px";
+
+  const duration = Math.random() * 6 + 4;
+  snowflake.style.animation = `snowfall ${duration}s linear forwards`;
+
+  document.body.appendChild(snowflake);
+
+  setTimeout(() => {
+    snowflake.remove();
+  }, duration * 1000);
+}
+
+    setInterval(createSnowflake, 50);
+    
+  </script>
 </body>
 </html>
