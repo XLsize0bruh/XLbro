@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: #c991ef;
   background-size: cover;
-  min-height: 100vh;
+  max-height: 100vh;
   text-align: center;
 }
 
