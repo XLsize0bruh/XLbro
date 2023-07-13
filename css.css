@@ -76,7 +76,7 @@ ul li a {
     min-height: 100vh;
     text-align: center;
   }
-  
+
   .box-img {
     max-width: 300px;
   }
@@ -97,7 +97,8 @@ ul li a {
   .box li a {
     font-size: 100px;
   }
-  .p{
+  
+  .box p {
     font-size: 18px;
   }
 }
