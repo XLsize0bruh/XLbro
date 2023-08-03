@@ -1,10 +1,11 @@
-<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <link rel="icon" href="https://wallpaperforu.com/wp-content/uploads/2021/05/Wallpaper-Matrix-Digital-Wallpaper-Kali-Linux-Kali-Linux32.jpg" type="image/gif" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css.css">
   <style>
     .text-container {
@@ -27,15 +28,58 @@
     }
 
     @keyframes snowfall {
-  0% {
-    top: -5%;
-  }
-  100% {
-    top: 170%;
-  }
-  
-}
+      0% {
+        top: -5%;
+      }
+      100% {
+        top: 170%;
+      }
+    }
 
+    .copy-box {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 238, 88, 0); /* Fully Transparent Light Mid Dark Yellow (Alpha: 0) */
+    border: 2px solid #000000; /* Dark Black Border */
+    width: 180px
+    font-family: "Inter", sans-serif;
+    }
+
+    .copy-link-input {
+      font-size: 14px;
+      border: 1px solid #cccccc;
+      outline: none;
+      margin-bottom: 8px;
+    }
+
+    .copy-link-button {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #dddddd;
+      color: #333333;
+      outline: none;
+      border: 1px solid #cccccc;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+
+    .copy-link-button:hover {
+      background: #cccccc;
+    }
+
+    .donate-text {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
   </style>
   <title>XLsize_bruh</title>
 </head>
@@ -43,43 +87,59 @@
   <div class="box">
     <div class="text-container">
       <img src="https://i1.sndcdn.com/artworks-hLi1wgEaxEkT5fdL-PiBmtQ-t500x500.jpg" alt="" class="box-img">
+      <script>
+        function createSnowflake() {
+          const snowflake = document.createElement("span");
+          snowflake.innerHTML = "&#10052;";
+          snowflake.classList.add("snowflake");
+          
+          const size = Math.random() * 20 + 10;
+          snowflake.style.fontSize = size + "px";
+        
+          const startX = Math.random() * window.innerWidth;
+          snowflake.style.left = startX + "px";
+        
+          const duration = Math.random() * 6 + 4;
+          snowflake.style.animation = `snowfall ${duration}s linear forwards`;
+        
+          document.body.appendChild(snowflake);
+        
+          setTimeout(() => {
+            snowflake.remove();
+          }, duration * 1000);
+        }
+        
+        setInterval(createSnowflake, 180);
+      </script>
       <h1><b>XLsize_bruh</b></h1>
       <h5><b>HUMAN ig</b></h5>
       <p><font size="3">"Jack of all trades, but Master of none"</font></p>
+      <div class="copy-box">
+        <p class="donate-text"><font align="center">‎ ‎ ‎ ‎  DONATE ME!!</font></p>
+        <input type="text" class="copy-link-input" value="pratyush0dutta@fam" readonly>
+        <button type="button" class="copy-link-button" onclick="copyText()">
+          Copy
+        </button>
+      </div>
+      <ul>
+        <li><a href="https://github.com/XLsize0bruh"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://youtube.com/@xlsize_bruh"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+        <li><a href="https://discord.gg/zFjjgvupT3%22%3E"><i class="fab fa-discord" aria-hidden="true"></i></a></li>
+        <li><a href="https://open.spotify.com/user/31cktlmbczsl4pw4adgtcfub4ujm?si=4dMJoYgZQcGVbQt0FSYL4A"><i class="fab fa-spotify" aria-hidden="true"></i></a></li>
+        <p><font size="4">--Web-Software Developer--</font><br><br><br><br></p>
+      </ul>
     </div>
-    <ul>
-      <li><a href="https://github.com/XLsize0bruh"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-      <li><a href="https://youtube.com/@xlsize_bruh"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-      <li><a href="https://discord.gg/zFjjgvupT3%22%3E"><i class="fab fa-discord" aria-hidden="true"></i></a></li>
-      <li><a href="https://open.spotify.com/user/31cktlmbczsl4pw4adgtcfub4ujm?si=4dMJoYgZQcGVbQt0FSYL4A"><i class="fab fa-spotify" aria-hidden="true"></i></a></li>
-      <p><font size="4">--Web-Software Developer--</font>                           <br>                           <br>              <br>                     <br>                  </p>
-    </ul>
   </div>
 
   <script>
-    function createSnowflake() {
-  const snowflake = document.createElement("span");
-  snowflake.innerHTML = "&#10052;";
-  snowflake.classList.add("snowflake");
-  
-  const size = Math.random() * 20 + 10;
-  snowflake.style.fontSize = size + "px";
+    function copyText() {
+      const inputField = document.querySelector(".copy-link-input");
+      inputField.select();
+      navigator.clipboard.writeText(inputField.value);
 
-  const startX = Math.random() * window.innerWidth;
-  snowflake.style.left = startX + "px";
-
-  const duration = Math.random() * 6 + 4;
-  snowflake.style.animation = `snowfall ${duration}s linear forwards`;
-
-  document.body.appendChild(snowflake);
-
-  setTimeout(() => {
-    snowflake.remove();
-  }, duration * 1000);
-}
-
-    setInterval(createSnowflake, 170);
-    
+      inputField.value = "Copied!";
+      setTimeout(() => (inputField.value = inputField.defaultValue), 2000);
+    }
   </script>
 </body>
 </html>
