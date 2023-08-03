@@ -107,7 +107,6 @@ ul li a {
   .copy-box {
     position: absolute;
     bottom: calc(50px + 5vh); /* Adjust the distance from the bottom as needed */
-    left: 50%;
     transform: translateX(-50%);
     padding: 10px;
     text-align: center;
