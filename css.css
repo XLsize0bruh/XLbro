@@ -105,10 +105,10 @@ ul li a {
   }
 
   .copy-box {
-    position: absolute;
-    bottom: 50px;
-    width: 170%; /* Adjust the width as needed for mobile */
-    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    width: 180px; 
+    height: 40px; 
     left: 0;
     right: 0;
     margin: auto;
