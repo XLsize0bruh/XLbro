@@ -1,7 +1,7 @@
 body {
   margin: 50px;
   padding: 0;
-  background-color: #FF6EB4;
+  background: linear-gradient(to right, #7BA9B3 , #ec9624ca, #98FB98)  ;
   background-size: cover;
   max-height: 100vh;
   text-align: center;
@@ -71,7 +71,7 @@ ul li a {
   body {
     margin: 0;
     padding: 50px;
-    background-color: #c991ef;
+    background: linear-gradient(to right, #7BA9B3 ,  #98FB98) ;
     background-size: cover;
     max-height: 100vh;
     text-align: center;
@@ -101,7 +101,4 @@ ul li a {
   .box p {
     font-size: 18px;
   }
-  
-  .box {
-    margin-bottom: 140px;
-  }
+}
