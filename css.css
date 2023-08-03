@@ -106,16 +106,17 @@ ul li a {
 
   .copy-box {
     position: absolute;
-    bottom: 0%; 
-    transform: translateX(-50%);
+    bottom: 50px;
+    width: 170%; /* Adjust the width as needed for mobile */
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
     padding: 10px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 238, 88, 0.7); 
-    border: 2px solid #000000; 
-    width: 180px; 
-    height: 40px; 
-    font-size: 14px; 
-  }
+    background-color: rgba(255, 238, 88, 0.7); /* Half Transparent Light Mid Dark Yellow (Alpha: 0.7) */
+    border: 2px solid #000000; /* Dark Black Border */
+    font-size: 14px;
   }
 }
