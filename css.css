@@ -5,6 +5,7 @@ body {
   background-size: cover;
   max-height: 100vh;
   text-align: center;
+  
 }
 
 .box-img {
@@ -71,10 +72,11 @@ ul li a {
   body {
     margin: 0;
     padding: 50px;
-    background: linear-gradient(to right, #7BA9B3 ,  #98FB98) ;
+    background: linear-gradient(to right, #7BA9B3, #98FB98);
     background-size: cover;
     max-height: 100vh;
     text-align: center;
+    
   }
 
   .box-img {
@@ -97,8 +99,22 @@ ul li a {
   .box li a {
     font-size: 100px;
   }
-  
+
   .box p {
     font-size: 18px;
+  }
+
+  .copy-box {
+    position: absolute;
+    bottom: 50px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 238, 88, 0); /* Fully Transparent Light Mid Dark Yellow (Alpha: 0) */
+    border: 2px solid #000000; /* Dark Black Border */
+    width: 180px;
+    font-family: "Inter", sans-serif;
   }
 }
