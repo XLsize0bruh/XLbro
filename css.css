@@ -105,18 +105,17 @@ ul li a {
   }
 
   .copy-box {
-    position: fixed;
-    top: 190%;
-    width: 180px; 
-    height: 40px; 
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 238, 88, 0.7); /* Half Transparent Light Mid Dark Yellow (Alpha: 0.7) */
-    border: 2px solid #000000; /* Dark Black Border */
-    font-size: 14px;
-  }
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  width: 180px; 
+  height: 40px; 
+  margin: -30px 0 0 -90px; /* Adjust the margin to half of width and height to center the box */
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 238, 88, 0.7); 
+  border: 2px solid #000000; 
+  font-size: 14px;
+}
 }
