@@ -106,7 +106,7 @@ ul li a {
 
   .copy-box {
     position: fixed;
-    bottom: 10px;
+    top: 190%;
     width: 180px; 
     height: 40px; 
     left: 0;
