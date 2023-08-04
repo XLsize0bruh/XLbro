@@ -105,18 +105,16 @@ ul li a {
   }
 
   .copy-box {
-  
-  bottom: 0;
-  
-  transform: translateX(-50%);
-  width: 180px; 
-  height: 40px; 
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 238, 88, 0.7); 
-  border: 2px solid #000000; 
-  font-size: 14px;
-  margin-bottom: -40px; /* Height of the box to pull it up */
-}
+    display: none;
+  }
+
+  .donate-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(255, 238, 88, 0.7);
+    padding: 10px;
+  }
 }
