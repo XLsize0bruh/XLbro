@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css.css">
   <style>
+    @media screen and (min-width: 601px) {
+  .copy-box {
+    display: block;
+  }
+
+  .donate-box {
+    display: none;
+  }
+}
     .text-container {
       display: flex;
       flex-direction: column;
@@ -83,7 +92,9 @@
     .donate-text {
     display: none;
   }
-  
+  .donate-box {
+    display: none;
+  }
   </style>
   <title>XLsize_bruh</title>
 </head>
@@ -119,11 +130,11 @@
       <h5><b>HUMAN ig</b></h5>
       <p><font size="3">"Jack of all trades, but Master of none"</font></p>
       <div class="copy-box">
-        <p class="copy-text"><font align="center">‎ ‎ ‎ ‎  DONATE ME!!</font></p>
-        <input type="text" class="copy-link-input" value="pratyush0dutta@fam" readonly>
-        <button type="button" class="copy-link-button" onclick="copyText()">
-          Copy
-        </button>
+        <p class="copy-text">‎‎‎‎DONATE ME!!</p>
+        <input type="text" class="copy-link-input" value="pratyush0dutta@fam" readonly><br>
+        <a href="upi://pay?pa=pratyush0dutta=FamPay%20Donation&cu=INR" class="donate-button-desktop">
+          Donate
+        </a>
       </div>
       <ul>
         <li><a href="https://github.com/XLsize0bruh"><i class="fab fa-github" aria-hidden="true"></i></a></li>
