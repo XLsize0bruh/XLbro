@@ -74,13 +74,18 @@
     .copy-link-button:hover {
       background: #cccccc;
     }
-    .donate-text {
+
+    .copy-text {
       font-weight: bold;
       font-size: 18px;
       margin-bottom: 10px;
     }
-    
-    }
+    .donate-text {
+    display: none;
+  }
+  .donate-box {
+    display: none;
+  }
   </style>
   <title>XLsize_bruh</title>
 </head>
@@ -116,7 +121,7 @@
       <h5><b>HUMAN ig</b></h5>
       <p><font size="3">"Jack of all trades, but Master of none"</font></p>
       <div class="copy-box">
-        <p class="donate-text"><font align="center">‎ ‎ ‎ ‎  DONATE ME!!</font></p>
+        <p class="copy-text"><font align="center">‎ ‎ ‎ ‎  DONATE ME!!</font></p>
         <input type="text" class="copy-link-input" value="pratyush0dutta@fam" readonly>
         <button type="button" class="copy-link-button" onclick="copyText()">
           Copy
@@ -132,7 +137,7 @@
     </div>
   </div>
   <div class="donate-box">
-    <p class="donate-text">‎‎‎‎DONATE ME!!</p>
+    <p class="donate-text">DONATE ME!!</p>
     <a href="upi://pay?pa=pratyush0dutta=FamPay%20Donation&cu=INR" class="donate-link-button">
       Donate
     </a>
