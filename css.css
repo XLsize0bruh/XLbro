@@ -106,6 +106,12 @@ ul li a:hover {
   .copy-box, .donate-box {
     display: none;
   }
+  @keyframes snowfall {
+  0% {
+    top: -5%;
+  }
+  100% {
+    top: 157%;
   }
 
 
