@@ -1,13 +1,23 @@
+*{
+  font-weight: bold;
+}
 body {
   margin: 0;
   padding: 0;
-  background-image:url('https://free4kwallpapers.com/uploads/originals/2020/09/04/neon-background--wallpaper.jpg');
+  background-image: url('https://free4kwallpapers.com/uploads/originals/2020/09/04/neon-background--wallpaper.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100vh;
   text-align: center;
-  
+  font-family:JUST Sans;
+}
+
+.container {
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow-y: scroll;
+  max-height: 100vh;
 }
 
 .box-img {
@@ -17,7 +27,7 @@ body {
   max-width: 300px;
 }
 
-.box h1 {
+.box h1, .box h5 {
   font-size: 48px;
   letter-spacing: 4px;
   font-weight: 100;
@@ -27,12 +37,11 @@ body {
 .box h5 {
   font-size: 30px;
   letter-spacing: 3px;
-  font-weight: 100;
-  margin: 0;
 }
 
 .box p {
   text-align: justify;
+  font-size: 18px;
 }
 
 ul {
@@ -47,42 +56,24 @@ ul {
 
 ul li {
   margin: 10px;
-}
-
-ul li a {
-  font-size: 48px;
-}
-
-.box li {
   display: inline-block;
-  margin: 6px;
   list-style: none;
 }
 
-.box li a {
+ul li a {
   color: white;
   text-decoration: none;
   font-size: 145px;
   transition: all ease-in-out 250ms;
 }
 
-.box li a:hover {
-  color: #b9b9b9;
+ul li a:hover {
+  color: #09e7a8c3;
 }
 
 @media (max-width: 768px) {
   body {
-    margin: 0;
-    padding: 50px;
     background: linear-gradient(to right, #7BA9B3, #98FB98);
-    background-size: cover;
-    max-height: 100vh;
-    text-align: center;
-    
-  }
-
-  .box-img {
-    max-width: 300px;
   }
 
   .box h1 {
@@ -109,16 +100,91 @@ ul li a {
   .copy-box {
     display: none;
   }
-  
 
-  .donate-box {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background-color: rgba(255, 238, 88, 0.7);
-    padding: 10px;
+  .copy-box, .donate-box {
+    display: none;
+  }
+  }
+
+
+@media screen and (min-width: 601px) {
+  .copy-box {
     display: block;
   }
+
+  .donate-box {
+    display: none;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.snowflake {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+}
+
+@keyframes snowfall {
+  0% {
+    top: -5%;
+  }
+  100% {
+    top: 166%;
+  }
+}
+
+.copy-box {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 238, 88, 0);
+  border: 2px solid #000000;
+  width: 180px;
+}
+
+.copy-link-input {
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  outline: none;
+  margin-bottom: 8px;
+}
+
+.copy-link-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dddddd;
+  color: #333333;
+  outline: none;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.copy-link-button:hover {
+  background: #cccccc;
+}
+
+.copy-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
