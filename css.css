@@ -73,7 +73,9 @@ ul li a:hover {
 
 @media (max-width: 768px) {
   body {
-    background: linear-gradient(to right, #7BA9B3, #98FB98);
+  background-image: url('https://free4kwallpapers.com/uploads/originals/2020/09/04/neon-background--wallpaper.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   }
 
   .box h1 {
