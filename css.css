@@ -3,13 +3,16 @@
 *{
   font-weight:bold;
   font-family: 'Montserrat', sans-serif;
-font-family: 'Pixelify Sans', cursive;
-font-family: 'Poppins', sans-serif;
+  font-family: 'Pixelify Sans', cursive;
+ font-family: 'Poppins', sans-serif;
   
 }
 .box h1 ,h5 , p 
 {
   color:#edc8c8;
+   font-family: 'Montserrat', sans-serif;
+  font-family: 'Pixelify Sans', cursive;
+ font-family: 'Poppins', sans-serif;
   
 
 }
