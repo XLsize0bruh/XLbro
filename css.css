@@ -1,5 +1,7 @@
 *{
   font-weight:bold;
+  margin: 0;
+  padding: 0;
   
   
 }
@@ -58,7 +60,6 @@ body {
   text-align: justify;
   font-size: 18px;
 }
-
 ul {
   display: flex;
   flex-direction: column;
@@ -71,20 +72,38 @@ ul {
 
 ul li {
   margin: 10px;
-  display: inline-block;
   list-style: none;
+}
+ul li a {
+  padding: 0 !important;
 }
 
 ul li a {
   color: white;
   text-decoration: none;
-  font-size: 145px;
+  font-size: 165px;
   transition: all ease-in-out 250ms;
 }
 
-ul li a:hover {
+/* Remove the ul selectors from here */
+.github-links li:hover a {
+  color: black;
+}
+
+.youtube-links li:hover a {
+  color: red;
+}
+
+.discord-links li:hover a {
+  color: blue;
+}
+
+.spotify-links li:hover a {
   color: #1bfc50e0;
 }
+
+
+
 
 @media (max-width: 768px) {
   body {
@@ -111,10 +130,12 @@ ul li a:hover {
 
   ul li a {
     font-size: 36px;
+    
   }
 
   .box li a {
     font-size: 100px;
+   
   }
 
   .box p {
