@@ -73,9 +73,7 @@ ul li a:hover {
 
 @media (max-width: 768px) {
   body {
-  background-image: url('https://free4kwallpapers.com/uploads/originals/2020/09/04/neon-background--wallpaper.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+    background: linear-gradient(to right, #7BA9B3, #98FB98);
   }
 
   .box h1 {
@@ -106,12 +104,6 @@ ul li a:hover {
   .copy-box, .donate-box {
     display: none;
   }
-  @keyframes snowfall {
-  0% {
-    top: -5%;
-  }
-  100% {
-    top: 157%;
   }
 
 
@@ -149,7 +141,7 @@ h1, p {
     top: -5%;
   }
   100% {
-    top: 166%;
+    top: 170%;
   }
 }
 
