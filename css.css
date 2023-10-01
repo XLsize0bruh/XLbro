@@ -125,6 +125,10 @@ ul li a:hover {
     display: none;
   }
   }
+}
+.box h1,h5{
+  -webkit-text-stroke: 0.7px black;
+}
 
 
 @media screen and (min-width: 601px) {
