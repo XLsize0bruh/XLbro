@@ -1,6 +1,6 @@
 *{
   font-weight:bold;
-font-family: 'Poppins', sans-serif;
+
   
 }
 .box h1 ,h5 , p 
@@ -21,7 +21,7 @@ body {
   background-size: cover;
   max-height: 100vh;
   text-align: center;
-  font-family: Mont;
+  font-family: 'Poppins', sans-serif;
   
 }
 
