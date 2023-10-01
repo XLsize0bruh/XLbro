@@ -1,6 +1,5 @@
 *{
   font-weight:bold;
-  font-family: 'Pixelify Sans', cursive;
 font-family: 'Poppins', sans-serif;
   
 }
@@ -23,7 +22,7 @@ body {
   max-height: 100vh;
   text-align: center;
   font-family: Mont;
-  font-size: 25px;
+  
 }
 
 .container {
