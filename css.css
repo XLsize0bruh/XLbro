@@ -170,6 +170,9 @@ footer{
   .copy-box, .donate-box {
     display: none;
   }
+  footer{
+    bottom: -1000;
+  }
   }
 
 .box h1,h5{
@@ -214,6 +217,7 @@ h1, p {
     top: 200%;
   }
 }
+
 
 .copy-box {
   position: fixed;
