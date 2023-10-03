@@ -71,7 +71,7 @@ ul {
 }
 
 ul li {
-  margin: 10px;
+  margin-bottom: 10px;
   list-style: none;
 }
 ul li a {
@@ -101,7 +101,28 @@ ul li a {
 .spotify-links li:hover a {
   color: #1bfc50e0;
 }
+footer{
+  padding: 5px;
+  color: wheat;
+  background-color: black;
+  /* border: 5px solid aquamarine; */
+  position: absolute;
+  bottom: -1100;
+  height: 30px;
+  width: 1525px;
+  text-align: center;
+  font-size: 23px;
+  opacity: .4;
 
+  
+}
+.ftext{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 
 
