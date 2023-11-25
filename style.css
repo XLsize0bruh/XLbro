@@ -426,8 +426,14 @@ ul {
         font-size: 20px;
     }
     #contact-pop-up-menu {
-        width: 60%; 
-        max-width: 300px; 
-        margin: 0 20px;
+        width: 80%; /* Adjust the width as needed */
+        max-width: 400px; /* Set a maximum width if desired */
+        margin: 0 20px; /* Add margin for gaps on both sides */
+    }
+
+    .close-button {
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
     }
 }
