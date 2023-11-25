@@ -1,0 +1,428 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #3494e6, #ec6ead);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
+    border-radius: 5px;
+    margin: 20px;
+    height: 350px;
+    width: 1100px;
+    margin-left: 100px;
+    border-radius: 30px;
+}
+.box-img{
+    height: 230px;
+    width:230px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.container p{
+    font-size: 25px;
+}
+.container h1{
+    font-size: 40px;
+}
+
+.folder {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    transition: transform 0.2s, box-shadow 0.3s; /* Add box-shadow transition */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.folder h2 {
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+.folder p {
+    font-size: 25px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.folder:hover {
+    transform: scale(1.05);
+    background-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.folder:hover {
+    transform: scale(1.05);
+    background-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.folder:hover h2,
+.folder:hover p {
+    background-color: #fff;
+    color: #ff6f61;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffaa99;
+}
+
+.centered {
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: auto;
+}
+/* Styling for the popup content */
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #7b4848;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 20px;
+    max-width: 550px;
+    max-height: 80vh; /* Set a maximum height for scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align:justify;
+}
+.popup h2{
+    text-align: center;
+}
+
+/* Styling for the close button */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.suggestion-section ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Adjust as needed */
+}
+/* Styling for the close button on hover */
+.close-popup:hover {
+    color: #ff6f61;
+}
+#popup-social .popup-content{
+    text-align: center;
+}
+
+
+.popup-content ul.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.popup-content ul.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.popup-content ul.social-links li a {
+    text-decoration: none;
+    color: #e2dfdf; /* Change the color as needed */
+    font-size: 60px; /* Change the font size as needed */
+    position: relative;
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+.popup-content ul.social-links li a:hover {
+    transform: scale(1.2); /* Increase in size on hover */
+    color: #70f7ca; /* Change color on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Add a spread of light in the background on hover */
+}
+
+#contact-pop-up-menu {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #333;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    width: 400px;
+    height: 330px;
+    border-radius: 10px;
+    transition: right 0.5s ease-in-out;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section p {
+    color: #0f0e0e;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-button.discord,
+.contact-button.github,
+.contact-button.twitter,
+.contact-button.reddit,
+.contact-menu .youtube {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button.discord:hover,
+.contact-button.github:hover,
+.contact-button.twitter:hover,
+.contact-button.reddit:hover,
+.contact-menu .youtube:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-button.discord {
+    background: #5865F2;
+}
+
+.contact-button.github {
+    background: #84a5c7;
+}
+
+.contact-button.twitter {
+    background: #1da1f2;
+}
+
+.contact-button.reddit {
+    background: #ff4500;
+}
+
+.contact-menu a.youtube {
+    background-color: #ff0000;
+    font-weight: bold;
+}
+
+.contact-menu a.youtube:hover {
+    background-color: #c00;
+}
+
+.contact-section p {
+    font-size: 25px;
+}
+
+.contact-button:hover {
+    background: #005682;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #ff6f61;
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .box-img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .container p {
+        font-size: 20px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+    }
+
+    .folder {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .folder p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    nav {
+        background-color: #444;
+        padding: 5px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        margin-bottom: 50px;
+
+    }
+    #home{
+        font-size: 140px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    .container {
+        margin-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+
+    .box-img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+    .folder {
+        width: calc(33.33% - 20px); /* Adjust the width and margin for the desired gap */
+        margin-right: 20px;
+        margin-bottom: 20px;
+        height: auto; /* Adjust the height automatically */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .folder:first-child {
+        width: calc(66.66% - 20px); /* Adjust the width for the topmost folder */
+        height: auto; /* Adjust the height automatically */
+    }
+
+    .folder h2 {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+    .folder p {
+        font-size: 14px;
+    }
+
+    .close-button {
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+    }
+}
