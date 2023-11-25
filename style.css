@@ -426,7 +426,7 @@ ul {
         font-size: 20px;
     }
     #contact-pop-up-menu {
-        max-width: 350px; /* Set a maximum width if desired */
+        width: 350px; /* Set a maximum width if desired */
         margin: 0 20px; /* Add margin for gaps on both sides */
     }
 
