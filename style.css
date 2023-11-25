@@ -386,16 +386,16 @@ ul {
     }
 
     .box-img {
-        height: 80px;
-        width: 80px;
+        height: 100px;
+        width: 100px;
     }
 
     .container p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .container h1 {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .folder {
