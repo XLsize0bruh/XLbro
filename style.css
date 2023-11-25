@@ -426,8 +426,8 @@ ul {
         font-size: 20px;
     }
     #contact-pop-up-menu {
-        width: 80%; 
-        max-width: 400px; 
+        width: 60%; 
+        max-width: 300px; 
         margin: 0 20px;
     }
 }
