@@ -429,6 +429,9 @@ ul {
         width: 350px; /* Set a maximum width if desired */
         margin: 0 20px; /* Add margin for gaps on both sides */
     }
+    .close-button {
+    right: 45px;
 
-    
+}
+ 
 }
