@@ -162,13 +162,19 @@ a:hover {
 }
 
 /* Styling for the close button */
-.close-popup {
-    position: absolute;
+.close-button {
+    position: fixed;
     top: 10px;
-    right: 10px;
+    right: 30px;
     font-size: 24px;
-    font-weight: bold;
     cursor: pointer;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+/* Styling for the close button on hover */
+.close-button:hover {
+    color: #ff6f61;
 }
 .suggestion-section ul {
     list-style-type: disc;
@@ -426,11 +432,11 @@ ul {
         font-size: 20px;
     }
     #contact-pop-up-menu {
-        width: 350px; /* Set a maximum width if desired */
+        width: 400px; /* Set a maximum width if desired */
         margin: 0 20px; /* Add margin for gaps on both sides */
     }
     .close-button {
-    right: 45px;
+    right: 55px;
 
 }
  
