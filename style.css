@@ -313,7 +313,7 @@ ul {
 }
 
 .close-button {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 30px;
     font-size: 24px;
@@ -437,6 +437,7 @@ ul {
     }
     .close-button {
     right: 55px;
+    position: fixed;
 
 }
  
